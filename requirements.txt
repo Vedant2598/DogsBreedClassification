@@ -6,3 +6,4 @@ torchvision
 pillow
 numpy
 python-multipart
+ultralytics
