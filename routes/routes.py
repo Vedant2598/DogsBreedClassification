@@ -35,7 +35,7 @@ model = model.to(device)
 checkpoint=torch.load("./best_model.pth")
 model.load_state_dict(checkpoint["model_state_dict"])
 
-
+ 
 
 def predict_image(image, model, class_names):
     model.eval()
