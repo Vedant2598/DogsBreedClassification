@@ -26,7 +26,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 class_names=None
-with open("../classes.json") as file:
+with open("./classes.json") as file:
     class_names = json.load(file)["classes"]
 
 # Modify the final fully connected layer for num_classes
