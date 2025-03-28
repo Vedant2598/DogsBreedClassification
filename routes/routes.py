@@ -31,7 +31,7 @@ with open("./classes.json") as file:
 
 # Modify the final fully connected layer for num_classes
 model.fc = nn.Linear(model.fc.in_features, len(class_names))
-# model = model.to(device)
+model = model.to(device)
 checkpoint=torch.load(f="./best_model.pth",map_location=torch.device(device))
 model.load_state_dict(checkpoint["model_state_dict"])
 
